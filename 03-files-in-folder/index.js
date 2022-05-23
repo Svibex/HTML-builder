@@ -5,7 +5,7 @@ const { stdout } = require('process');
 const folder = path.join(__dirname, 'secret-folder');
 
 fs.readdir(
-  path.join(__dirname, 'secret-folder'),
+  folder,
   (err, files) => {
     if (err) throw err;
 
